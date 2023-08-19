@@ -61,7 +61,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 ROOT_URLCONF = 'TruckImageSearch.urls'
 # At the bottom of the file
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/build/static'),
+    os.path.join(BASE_DIR, 'frontend/build'),
 ]
 TEMPLATES = [
     {
