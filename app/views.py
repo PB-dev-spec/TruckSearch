@@ -8,8 +8,11 @@ from django.http import JsonResponse
 from .utils import *
 import csv
 from pathlib import Path
+from django.shortcuts import render
 uploaded_images = []
 
+def index(request):
+    return render(request, 'index.html')
 class IndexView(TemplateView):
     template_name = "index.html"
 
